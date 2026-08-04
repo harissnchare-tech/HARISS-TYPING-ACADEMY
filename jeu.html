@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu - HARISS</title>
+  <meta name="description" content="Entraînez-vous à la dactylographie sans inscription. Mesurez votre vitesse WPM et votre précision en temps réel.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jeu.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="logo logo-gradient">HARISS</div>
+
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="jeu.html">Jeu</a>
+      <a href="classement.html">Classement</a>
+      <a href="profil.html">Profil</a>
+      <a href="parametres.html">Paramètres</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="profil.html" class="btn btn-outline">Se connecter</a>
+    </div>
+  </header>
+
+  <!-- ===== Jeu ===== -->
+  <main class="game-wrapper">
+    <h1 style="text-align:center; margin-bottom:8px;">Mode Standard</h1>
+    <p style="text-align:center; color:var(--text-secondary); margin-bottom:32px;">Tapez le texte ci-dessous le plus vite et précisément possible</p>
+
+    <div class="game-stats">
+      <div class="stat-box">
+        <div class="stat-value" id="stat-wpm">0</div>
+        <div class="stat-label">WPM</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="stat-accuracy">100%</div>
+        <div class="stat-label">Précision</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="stat-time">60</div>
+        <div class="stat-label">Secondes</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="stat-errors">0</div>
+        <div class="stat-label">Erreurs</div>
+      </div>
+    </div>
+
+    <div class="text-display" id="text-display"></div>
+
+    <input
+      type="text"
+      class="typing-input"
+      id="typing-input"
+      placeholder="Cliquez ici et commencez à taper..."
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+    >
+
+    <div class="game-controls">
+      <button class="btn btn-outline" id="btn-restart">🔄 Recommencer</button>
+    </div>
+
+    <div class="result-box" id="result-box">
+      <h2>Résultat</h2>
+      <p style="font-size:1.2rem; margin-bottom:8px;">Vitesse : <strong id="result-wpm">0</strong> WPM</p>
+      <p style="font-size:1.2rem; margin-bottom:20px;">Précision : <strong id="result-accuracy">0</strong>%</p>
+      <button class="btn btn-primary" id="btn-again">Rejouer</button>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>© 2026 HARISS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/jeu.js"></script>
+</body>
+</html>

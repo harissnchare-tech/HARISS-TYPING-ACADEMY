@@ -1,0 +1,56 @@
+/* ===== HARISS - Styles page Profil ===== */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  
+  .profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+  }
+  
+  .achievement {
+    text-align: center;
+    padding: 20px 12px;
+    opacity: 0.4;
+  }
+  
+  .achievement.unlocked {
+    opacity: 1;
+  }
+  
+  .achievement-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .achievement-name {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classement - HARISS</title>
+  <meta name="description" content="Découvrez les meilleurs typeurs de la communauté HARISS et comparez vos performances.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo logo-gradient">HARISS</div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="jeu.html">Jeu</a>
+      <a href="classement.html">Classement</a>
+      <a href="profil.html">Profil</a>
+      <a href="parametres.html">Paramètres</a>
+    </nav>
+    <div class="header-actions">
+      <a href="profil.html" class="btn btn-outline">Se connecter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center; margin-bottom:8px;">Classement</h1>
+    <p style="text-align:center; color:var(--text-secondary); margin-bottom:32px;">Les meilleurs typeurs de la communauté</p>
+
+    <div style="display:flex; gap:12px; justify-content:center; margin-bottom:32px;">
+      <button class="btn btn-primary" id="tab-global">Top Global</button>
+      <button class="btn btn-outline" id="tab-week">Cette semaine</button>
+    </div>
+
+    <div class="card">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border); text-align:left;">
+            <th style="padding:12px;">Rang</th>
+            <th style="padding:12px;">Joueur</th>
+            <th style="padding:12px;">WPM</th>
+            <th style="padding:12px;">Précision</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <tr>
+            <td colspan="4" style="padding:24px; text-align:center; color:var(--text-secondary);">
+              Aucun score enregistré pour le moment. Sois le premier !
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 HARISS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/classement.js"></script>
+</body>
+</html>

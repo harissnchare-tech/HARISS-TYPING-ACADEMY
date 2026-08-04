@@ -1,0 +1,107 @@
+/* ===== HARISS - Styles page Jeu ===== */
+
+.game-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  
+  .game-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .stat-box {
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-light);
+  }
+  
+  .stat-label {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .text-display {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    user-select: none;
+    min-height: 140px;
+  }
+  
+  .text-display span {
+    transition: color 0.1s;
+  }
+  
+  .char-correct {
+    color: var(--success);
+  }
+  
+  .char-incorrect {
+    color: var(--danger);
+    text-decoration: underline;
+  }
+  
+  .char-current {
+    background: var(--accent);
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .char-pending {
+    color: var(--text-secondary);
+  }
+  
+  .typing-input {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  .typing-input:focus {
+    border-color: var(--accent);
+  }
+  
+  .game-controls {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .result-box {
+    display: none;
+    text-align: center;
+    padding: 32px;
+    margin-top: 20px;
+  }
+  
+  .result-box.show {
+    display: block;
+  }
+  
+  .result-box h2 {
+    margin-bottom: 16px;
+    color: var(--accent-light);
+  }

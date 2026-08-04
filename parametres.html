@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramètres - HARISS</title>
+  <meta name="description" content="Personnalisez votre expérience HARISS : thème, disposition clavier et son.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo logo-gradient">HARISS</div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="jeu.html">Jeu</a>
+      <a href="classement.html">Classement</a>
+      <a href="profil.html">Profil</a>
+      <a href="parametres.html">Paramètres</a>
+    </nav>
+    <div class="header-actions">
+      <a href="jeu.html" class="btn btn-primary">Jouer</a>
+    </div>
+  </header>
+
+  <main class="container" style="max-width:600px;">
+    <h1 style="margin-bottom:32px;">Paramètres</h1>
+
+    <div class="card" style="margin-bottom:20px;">
+      <h3 style="margin-bottom:16px;">Apparence</h3>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span>Thème sombre</span>
+        <button class="btn btn-outline theme-toggle">🌙 Basculer</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:20px;">
+      <h3 style="margin-bottom:16px;">Disposition du clavier</h3>
+      <select id="keyboard-layout" style="width:100%; padding:10px; background:var(--bg-secondary); color:var(--text-primary); border:1px solid var(--border); border-radius:8px;">
+        <option value="azerty">AZERTY</option>
+        <option value="qwerty">QWERTY</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-bottom:16px;">Langue des textes</h3>
+      <select id="text-language" style="width:100%; padding:10px; background:var(--bg-secondary); color:var(--text-primary); border:1px solid var(--border); border-radius:8px;">
+        <option value="fr">Français</option>
+        <option value="en">Anglais</option>
+      </select>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 HARISS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

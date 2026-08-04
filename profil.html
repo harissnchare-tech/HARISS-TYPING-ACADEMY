@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - HARISS</title>
+  <meta name="description" content="Suivez votre progression, vos statistiques de frappe et débloquez des succès sur HARISS.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profil.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo logo-gradient">HARISS</div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="jeu.html">Jeu</a>
+      <a href="classement.html">Classement</a>
+      <a href="profil.html">Profil</a>
+      <a href="parametres.html">Paramètres</a>
+    </nav>
+    <div class="header-actions">
+      <a href="jeu.html" class="btn btn-primary">Jouer</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="profile-header">
+      <div class="avatar" id="profile-avatar">I</div>
+      <div>
+        <h1 id="profile-name">Invité</h1>
+        <p style="color:var(--text-secondary);">Joue en mode invité — <a href="#" style="color:var(--accent-light);">crée un compte</a> pour sauvegarder ta progression</p>
+      </div>
+    </div>
+
+    <div class="profile-stats-grid">
+      <div class="card" style="text-align:center;">
+        <div class="stat-value" id="profile-best-wpm">0</div>
+        <div class="stat-label">Meilleur WPM</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="stat-value" id="profile-avg-accuracy">0%</div>
+        <div class="stat-label">Précision moyenne</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="stat-value" id="profile-games">0</div>
+        <div class="stat-label">Parties jouées</div>
+      </div>
+    </div>
+
+    <h2 style="margin-bottom:16px;">Succès</h2>
+    <div class="achievements-grid" id="achievements-grid">
+      <div class="achievement" data-id="first-game">
+        <div class="achievement-icon">🎮</div>
+        <div class="achievement-name">Première partie</div>
+      </div>
+      <div class="achievement" data-id="speed-40">
+        <div class="achievement-icon">⚡</div>
+        <div class="achievement-name">40 WPM atteint</div>
+      </div>
+      <div class="achievement" data-id="speed-60">
+        <div class="achievement-icon">🚀</div>
+        <div class="achievement-name">60 WPM atteint</div>
+      </div>
+      <div class="achievement" data-id="perfect">
+        <div class="achievement-icon">🎯</div>
+        <div class="achievement-name">100% précision</div>
+      </div>
+      <div class="achievement" data-id="five-games">
+        <div class="achievement-icon">🏅</div>
+        <div class="achievement-name">5 parties jouées</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 HARISS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/profil.js"></script>
+</body>
+</html>
